@@ -1,0 +1,11 @@
+{
+  "description": "XDR-03 학습용 ZTNA 기본 정책. 대응 모듈은 이 파일을 변경하지 않습니다.",
+  "allow": [
+    {
+      "id": "baseline-allow",
+      "action": "allow",
+      "description": "활성 임시 거부가 없는 테스트 요청 허용"
+    }
+  ],
+  "deny": []
+}
