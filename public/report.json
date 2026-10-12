@@ -1,0 +1,328 @@
+{
+  "schema": "aleph.xdr.result.v1",
+  "moduleKey": "known-cve",
+  "generatedAt": "2026-10-13T00:00:00.000Z",
+  "counts": {
+    "block": 8,
+    "alert": 8,
+    "record": 8
+  },
+  "fixtureCount": 24,
+  "normalBlocked": 0,
+  "temporaryDenyRules": [
+    {
+      "id": "xdr03-kc-01",
+      "source": "203.0.113.10",
+      "alertId": "kc-01",
+      "expiresAt": "2026-10-13T00:15:00.000Z"
+    },
+    {
+      "id": "xdr03-kc-02",
+      "source": "203.0.113.10",
+      "alertId": "kc-02",
+      "expiresAt": "2026-10-13T00:15:00.000Z"
+    },
+    {
+      "id": "xdr03-kc-03",
+      "source": "198.51.100.16",
+      "alertId": "kc-03",
+      "expiresAt": "2026-10-13T00:15:00.000Z"
+    },
+    {
+      "id": "xdr03-kc-04",
+      "source": "192.0.2.16",
+      "alertId": "kc-04",
+      "expiresAt": "2026-10-13T00:15:00.000Z"
+    },
+    {
+      "id": "xdr03-kc-05",
+      "source": "203.0.113.24",
+      "alertId": "kc-05",
+      "expiresAt": "2026-10-13T00:15:00.000Z"
+    },
+    {
+      "id": "xdr03-kc-06",
+      "source": "198.51.100.24",
+      "alertId": "kc-06",
+      "expiresAt": "2026-10-13T00:15:00.000Z"
+    },
+    {
+      "id": "xdr03-kc-07",
+      "source": "192.0.2.24",
+      "alertId": "kc-07",
+      "expiresAt": "2026-10-13T00:15:00.000Z"
+    },
+    {
+      "id": "xdr03-kc-08",
+      "source": "203.0.113.31",
+      "alertId": "kc-08",
+      "expiresAt": "2026-10-13T00:15:00.000Z"
+    }
+  ],
+  "results": [
+    {
+      "alertId": "kc-01",
+      "action": "block",
+      "confidence": 0.97,
+      "reason": "T1190-Log4Shell-JNDI-Remote-Lookup",
+      "description": "CVE-2021-44228 형태 요청입니다. 머리글에 원격 조회 구문이 있습니다.",
+      "source": "203.0.113.10",
+      "level": 13,
+      "attempts": null,
+      "normal": false
+    },
+    {
+      "alertId": "kc-02",
+      "action": "block",
+      "confidence": 0.97,
+      "reason": "T1190-Log4Shell-JNDI-Remote-Lookup",
+      "description": "CVE-2021-44228 형태 요청입니다. 주소 인자에 원격 조회 구문이 있습니다.",
+      "source": "203.0.113.10",
+      "level": 12,
+      "attempts": null,
+      "normal": false
+    },
+    {
+      "alertId": "kc-03",
+      "action": "block",
+      "confidence": 0.99,
+      "reason": "T1190-Log4Shell-Multi-Surface",
+      "description": "같은 주소에서 CVE-2021-44228 형태가 6번 반복됐습니다.",
+      "source": "198.51.100.16",
+      "level": 12,
+      "attempts": "6",
+      "normal": false
+    },
+    {
+      "alertId": "kc-04",
+      "action": "block",
+      "confidence": 0.99,
+      "reason": "T1190-Log4Shell-Multi-Surface",
+      "description": "여러 머리글에 같은 CVE-2021-44228 표기가 있습니다.",
+      "source": "192.0.2.16",
+      "level": 13,
+      "attempts": "4",
+      "normal": false
+    },
+    {
+      "alertId": "kc-05",
+      "action": "block",
+      "confidence": 0.97,
+      "reason": "T1190-Log4Shell-JNDI-Remote-Lookup",
+      "description": "알려진 취약점 점검 흔적과 CVE-2021-44228 형태가 함께 있습니다.",
+      "source": "203.0.113.24",
+      "level": 12,
+      "attempts": null,
+      "normal": false
+    },
+    {
+      "alertId": "kc-06",
+      "action": "block",
+      "confidence": 0.99,
+      "reason": "T1190-Log4Shell-Multi-Surface",
+      "description": "요청 인자의 원격 조회 구문이 8번 들어왔습니다.",
+      "source": "198.51.100.24",
+      "level": 11,
+      "attempts": "8",
+      "normal": false
+    },
+    {
+      "alertId": "kc-07",
+      "action": "block",
+      "confidence": 0.97,
+      "reason": "T1190-Log4Shell-JNDI-Remote-Lookup",
+      "description": "로그인 요청에 CVE-2021-44228 형태가 그대로 있습니다.",
+      "source": "192.0.2.24",
+      "level": 12,
+      "attempts": null,
+      "normal": false
+    },
+    {
+      "alertId": "kc-08",
+      "action": "block",
+      "confidence": 0.99,
+      "reason": "T1190-Log4Shell-Multi-Surface",
+      "description": "같은 문서용 조회 구문이 머리글과 주소에 같이 있습니다.",
+      "source": "203.0.113.31",
+      "level": 10,
+      "attempts": null,
+      "normal": false
+    },
+    {
+      "alertId": "kc-09",
+      "action": "alert",
+      "confidence": 0.56,
+      "reason": "T1190-CVE-Reference-Only",
+      "description": "검색어에 CVE-2021-44228 이라는 글자만 있습니다. 조회 구문은 없습니다.",
+      "source": "192.0.2.45",
+      "level": 6,
+      "attempts": "1",
+      "normal": false
+    },
+    {
+      "alertId": "kc-10",
+      "action": "alert",
+      "confidence": 0.56,
+      "reason": "T1190-CVE-Reference-Only",
+      "description": "수업 노트에 jndi 라는 단어가 한 번 있습니다. 조회 구문은 없습니다.",
+      "source": "198.51.100.45",
+      "level": 5,
+      "attempts": "1",
+      "normal": false
+    },
+    {
+      "alertId": "kc-11",
+      "action": "alert",
+      "confidence": 0.56,
+      "reason": "T1190-CVE-Reference-Only",
+      "description": "취약점 목록 문서를 한 번 열었습니다.",
+      "source": "203.0.113.45",
+      "level": 7,
+      "attempts": "1",
+      "normal": false
+    },
+    {
+      "alertId": "kc-12",
+      "action": "alert",
+      "confidence": 0.56,
+      "reason": "T1190-CVE-Reference-Only",
+      "description": "머리글에 중괄호가 한 번 있습니다. 원격 조회 구문은 없습니다.",
+      "source": "192.0.2.46",
+      "level": 6,
+      "attempts": "1",
+      "normal": false
+    },
+    {
+      "alertId": "kc-13",
+      "action": "alert",
+      "confidence": 0.63,
+      "reason": "T1190-Known-CVE-Scanner-Signal",
+      "description": "점검 도구와 비슷한 수업용 프로그램 이름이 1건 있습니다.",
+      "source": "198.51.100.46",
+      "level": 5,
+      "attempts": "1",
+      "normal": false
+    },
+    {
+      "alertId": "kc-14",
+      "action": "alert",
+      "confidence": 0.56,
+      "reason": "T1190-CVE-Reference-Only",
+      "description": "라이브러리 이름이 로그에 한 번 있습니다. 악용 구문은 없습니다.",
+      "source": "203.0.113.46",
+      "level": 7,
+      "attempts": "1",
+      "normal": false
+    },
+    {
+      "alertId": "kc-15",
+      "action": "alert",
+      "confidence": 0.56,
+      "reason": "T1190-CVE-Reference-Only",
+      "description": "조회 형태가 잘린 글자가 1건 있습니다. 완전한 구문은 아닙니다.",
+      "source": "192.0.2.47",
+      "level": 6,
+      "attempts": "1",
+      "normal": false
+    },
+    {
+      "alertId": "kc-16",
+      "action": "alert",
+      "confidence": 0.56,
+      "reason": "T1190-CVE-Reference-Only",
+      "description": "같은 주소에서 취약점 이름 검색이 2건입니다. 악용 구문은 없습니다.",
+      "source": "198.51.100.47",
+      "level": 8,
+      "attempts": "2",
+      "normal": false
+    },
+    {
+      "alertId": "kc-17",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1190-Normal-Web-Access",
+      "description": "공개 화면을 열었습니다.",
+      "source": "192.0.2.72",
+      "level": 3,
+      "attempts": null,
+      "normal": true
+    },
+    {
+      "alertId": "kc-18",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1190-Normal-Web-Access",
+      "description": "상태 확인 주소가 열렸습니다.",
+      "source": "192.0.2.72",
+      "level": 3,
+      "attempts": null,
+      "normal": true
+    },
+    {
+      "alertId": "kc-19",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1190-Normal-Web-Access",
+      "description": "로그인이 성공했습니다.",
+      "source": "198.51.100.72",
+      "level": 3,
+      "attempts": null,
+      "normal": true
+    },
+    {
+      "alertId": "kc-20",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1190-Normal-Web-Access",
+      "description": "정적 스타일 파일을 받았습니다.",
+      "source": "198.51.100.72",
+      "level": 2,
+      "attempts": null,
+      "normal": true
+    },
+    {
+      "alertId": "kc-21",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1190-Normal-Web-Access",
+      "description": "내 메모를 조회했습니다.",
+      "source": "203.0.113.72",
+      "level": 3,
+      "attempts": null,
+      "normal": true
+    },
+    {
+      "alertId": "kc-22",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1190-Normal-Web-Access",
+      "description": "세션 유지를 확인했습니다.",
+      "source": "203.0.113.72",
+      "level": 2,
+      "attempts": null,
+      "normal": true
+    },
+    {
+      "alertId": "kc-23",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1190-Normal-Web-Access",
+      "description": "반 공지를 조회했습니다.",
+      "source": "192.0.2.73",
+      "level": 3,
+      "attempts": null,
+      "normal": true
+    },
+    {
+      "alertId": "kc-24",
+      "action": "record",
+      "confidence": 0.07,
+      "reason": "T1190-Normal-Web-Access",
+      "description": "로그아웃했습니다.",
+      "source": "198.51.100.73",
+      "level": 3,
+      "attempts": null,
+      "normal": true
+    }
+  ]
+}
