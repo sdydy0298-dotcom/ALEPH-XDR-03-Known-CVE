@@ -1,0 +1,16 @@
+{"alertId":"kc-01","action":"block","confidence":0.97,"reason":"T1190-Log4Shell-JNDI-Remote-Lookup","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-02","action":"block","confidence":0.97,"reason":"T1190-Log4Shell-JNDI-Remote-Lookup","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-03","action":"block","confidence":0.99,"reason":"T1190-Log4Shell-Multi-Surface","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-04","action":"block","confidence":0.99,"reason":"T1190-Log4Shell-Multi-Surface","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-05","action":"block","confidence":0.97,"reason":"T1190-Log4Shell-JNDI-Remote-Lookup","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-06","action":"block","confidence":0.99,"reason":"T1190-Log4Shell-Multi-Surface","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-07","action":"block","confidence":0.97,"reason":"T1190-Log4Shell-JNDI-Remote-Lookup","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-08","action":"block","confidence":0.99,"reason":"T1190-Log4Shell-Multi-Surface","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-09","action":"alert","confidence":0.56,"reason":"T1190-CVE-Reference-Only","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-10","action":"alert","confidence":0.56,"reason":"T1190-CVE-Reference-Only","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-11","action":"alert","confidence":0.56,"reason":"T1190-CVE-Reference-Only","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-12","action":"alert","confidence":0.56,"reason":"T1190-CVE-Reference-Only","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-13","action":"alert","confidence":0.63,"reason":"T1190-Known-CVE-Scanner-Signal","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-14","action":"alert","confidence":0.56,"reason":"T1190-CVE-Reference-Only","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-15","action":"alert","confidence":0.56,"reason":"T1190-CVE-Reference-Only","at":"2026-10-13T00:00:00.000Z"}
+{"alertId":"kc-16","action":"alert","confidence":0.56,"reason":"T1190-CVE-Reference-Only","at":"2026-10-13T00:00:00.000Z"}

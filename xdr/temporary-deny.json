@@ -1,0 +1,74 @@
+[
+  {
+    "id": "xdr03-kc-01",
+    "action": "deny",
+    "source": "203.0.113.10",
+    "alertId": "kc-01",
+    "reason": "T1190-Log4Shell-JNDI-Remote-Lookup",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr03-kc-02",
+    "action": "deny",
+    "source": "203.0.113.10",
+    "alertId": "kc-02",
+    "reason": "T1190-Log4Shell-JNDI-Remote-Lookup",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr03-kc-03",
+    "action": "deny",
+    "source": "198.51.100.16",
+    "alertId": "kc-03",
+    "reason": "T1190-Log4Shell-Multi-Surface",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr03-kc-04",
+    "action": "deny",
+    "source": "192.0.2.16",
+    "alertId": "kc-04",
+    "reason": "T1190-Log4Shell-Multi-Surface",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr03-kc-05",
+    "action": "deny",
+    "source": "203.0.113.24",
+    "alertId": "kc-05",
+    "reason": "T1190-Log4Shell-JNDI-Remote-Lookup",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr03-kc-06",
+    "action": "deny",
+    "source": "198.51.100.24",
+    "alertId": "kc-06",
+    "reason": "T1190-Log4Shell-Multi-Surface",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr03-kc-07",
+    "action": "deny",
+    "source": "192.0.2.24",
+    "alertId": "kc-07",
+    "reason": "T1190-Log4Shell-JNDI-Remote-Lookup",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  },
+  {
+    "id": "xdr03-kc-08",
+    "action": "deny",
+    "source": "203.0.113.31",
+    "alertId": "kc-08",
+    "reason": "T1190-Log4Shell-Multi-Surface",
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "expiresAt": "2026-10-13T00:15:00.000Z"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "T1190-Log4Shell-JNDI-Remote-Lookup",
+    "condition": "요청 인자·머리글의 완전한 ${jndi:ldap://…}, JNDI RMI/DNS 등의 원격 조회 구문을 확인하고 출발 IP, Wazuh 수준과 MITRE T1190 근거가 충분할 때만 차단",
+    "evidence": "CVE-2021-44228 및 MITRE ATT&CK T1190: Log4j 메시지 처리에 삽입된 JNDI 원격 조회는 알려진 공개 앱 취약점 악용 신호."
+  },
+  {
+    "name": "T1190-Log4Shell-Multi-Surface",
+    "condition": "동일 요청의 주소·User-Agent·기타 머리글에 원격 조회 구문이 중복되거나 반복되어 고확신도 악용이 의심되는 경우",
+    "evidence": "CVE-2021-44228 및 MITRE ATT&CK T1190: 여러 외부 입력 위치에서의 원격 조회 삽입은 알려진 취약점 악용을 뒷받침."
+  },
+  {
+    "name": "T1190-Known-CVE-Scanner-Signal",
+    "condition": "취약점 점검 도구 흔적, 검사·probe·scanner 경보는 완전한 JNDI 원격 조회 구문이 없으면 차단하지 않고 알림으로 유지",
+    "evidence": "CVE-2021-44228 및 MITRE ATT&CK T1190: 취약점 점검 흔적만으로 성공적인 원격 악용이 확인되지는 않음."
+  },
+  {
+    "name": "T1190-CVE-Reference-Only",
+    "condition": "CVE-2021-44228 이름, log4j, jndi 등의 단순 검색·학습·불완전한 표기는 불확실한 경우 알림으로만 남김",
+    "evidence": "CVE-2021-44228 및 MITRE ATT&CK T1190: 취약점 이름 언급만으로 실제 악용 요청이라고 단정할 수 없음."
+  },
+  {
+    "name": "T1190-Normal-Web-Access",
+    "condition": "알려진 악용 문자열, 공격 신호, MITRE T1190가 없는 일반 조회·로그인·로그아웃은 기록만",
+    "evidence": "MITRE ATT&CK T1190: 일반 웹 요청은 외부 애플리케이션 악용 증거가 아니므로 차단 대상에서 제외."
+  }
+]
